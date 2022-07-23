@@ -4,6 +4,7 @@ author: Felix Klauke <felix@klauke-enterprises.com>
 
 branding:
   icon: book
+  color: blue
 
 inputs:
   files:
