@@ -10,7 +10,7 @@ LABEL org.opencontainers.image.documentation="https://github.com/klauke-enterpri
 LABEL org.opencontainers.image.authors="Felix Klauke <felix@klauke-enterprises.com>"
 
 RUN apk upgrade --update && apk add \
-    libfreetype6-dev \
+    libfreetype6 \
     git
 
 WORKDIR /opt/plantuml
