@@ -12,7 +12,7 @@ This action leverages the plantuml java tool to create uml diagrams from given i
 
 ### Compile single diagram
 
-```
+```yaml
 uses: klauke-enterprises/plantuml-action@v1
 with:
   files: diagram.puml
@@ -20,7 +20,7 @@ with:
 
 ### Compiling multiple diagrams
 
-```
+```yaml
 uses: klauke-enterprises/plantuml-action@v1
 with:
   files: |
@@ -30,7 +30,7 @@ with:
 
 ### Compiling multiple diagrams with pattern
 
-```
+```yaml
 uses: klauke-enterprises/plantuml-action@v1
 with:
   files: diagram-**.puml
