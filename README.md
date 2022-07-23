@@ -6,7 +6,7 @@ This action leverages the plantuml java tool to create uml diagrams from given i
 
 ## `files`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** The pattern of the files to be processed.
 
 ## Example usage
 
