@@ -13,6 +13,7 @@ RUN apk upgrade --update && apk add \
     freetype-dev \
     libpng-dev \
     fontconfig-dev \
+    ttf-dejavu \
     git
 
 WORKDIR /opt/plantuml
