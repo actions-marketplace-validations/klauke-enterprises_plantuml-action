@@ -2,12 +2,12 @@ name: Render PlantUML
 description: Render PlantUML diagrams
 
 inputs:
-  files: 
+  files:
     required: true
     description: Pattern of files to render
-    
- runs:
-   using: Docker
-   image: Dockerfile
-   args:
-     - ${{ inputs.files }}
+
+runs:
+  using: docker
+  image: runtime/Dockerfile
+  args:
+    - ${{ inputs.files }}
