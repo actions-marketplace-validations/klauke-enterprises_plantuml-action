@@ -1,7 +1,7 @@
-FROM openjdk:18
+FROM openjdk:18-alpine
 
-RUN apt-get update && \
-    apt-get install -y git
+RUN apk update
+RUN apk add git
 
 WORKDIR /opt/plantuml
 
