@@ -1,5 +1,9 @@
 name: Render PlantUML
 description: Render PlantUML diagrams
+author: Felix Klauke <felix@klauke-enterprises.com>
+
+branding:
+  icon: book
 
 inputs:
   files:
