@@ -13,9 +13,10 @@ This action leverages the plantuml java tool to create uml diagrams from given i
 **With single file**
 
 ```yaml
-uses: klauke-enterprises/plantuml-action@v1
-with:
-  files: diagram.puml
+- name: Generate PlantUML Diagrams
+  uses: klauke-enterprises/plantuml-action@v1
+  with:
+    files: my-custom-folder/diagram.puml
 ```
 
 **Wildcard Supoort**
@@ -23,7 +24,8 @@ with:
 You can use the full wildcard syntax to match multiple files as stated in the plantuml [docs](https://plantuml.com/en/command-line).
 
 ```yaml
-uses: klauke-enterprises/plantuml-action@v1
-with:
-  files: my-custom-folder/diagram-**.puml
+- name: Generate PlantUML Diagrams
+  uses: klauke-enterprises/plantuml-action@v1
+  with:
+    files: my-custom-folders-*/diagram-**.puml
 ```
