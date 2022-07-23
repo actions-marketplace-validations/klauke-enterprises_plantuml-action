@@ -10,7 +10,7 @@ This action leverages the plantuml java tool to create uml diagrams from given i
 
 ## Example usage
 
-### Compile single diagram
+**With single file**
 
 ```yaml
 uses: klauke-enterprises/plantuml-action@v1
@@ -18,20 +18,12 @@ with:
   files: diagram.puml
 ```
 
-### Compiling multiple diagrams
+**Wildcard Supoort**
+
+You can use the full wildcard syntax to match multiple files as stated in the plantuml [docs](https://plantuml.com/en/command-line).
 
 ```yaml
 uses: klauke-enterprises/plantuml-action@v1
 with:
-  files: |
-    diagram.puml
-    diagram-test.puml
-```
-
-### Compiling multiple diagrams with pattern
-
-```yaml
-uses: klauke-enterprises/plantuml-action@v1
-with:
-  files: diagram-**.puml
+  files: my-custom-folder/diagram-**.puml
 ```
