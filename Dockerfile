@@ -12,6 +12,7 @@ LABEL org.opencontainers.image.authors="Felix Klauke <felix@klauke-enterprises.c
 RUN apk upgrade --update && apk add \
     freetype-dev \
     libpng-dev \
+    fontconfig-dev \
     git
 
 WORKDIR /opt/plantuml
