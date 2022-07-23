@@ -2,7 +2,9 @@
 
 echo "Compiling plantuml diagrams..."
 
-inputFiles=$INPUT_files
+inputFiles=$INPUT_FILES
+
+env
 
 echo "Imput Files: $inputFiles"
 
