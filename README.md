@@ -19,7 +19,7 @@ This action leverages the plantuml java tool to create uml diagrams from given i
     files: my-custom-folder/diagram.puml
 ```
 
-**Wildcard Supoort**
+**Wildcard Support**
 
 You can use the full wildcard syntax to match multiple files as stated in the plantuml [docs](https://plantuml.com/en/command-line).
 
