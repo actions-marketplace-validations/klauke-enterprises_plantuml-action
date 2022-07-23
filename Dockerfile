@@ -9,8 +9,9 @@ LABEL org.opencontainers.image.version="1.2022.6"
 LABEL org.opencontainers.image.documentation="https://github.com/klauke-enterprises/plantuml-action"
 LABEL org.opencontainers.image.authors="Felix Klauke <felix@klauke-enterprises.com>"
 
-RUN apk update
-RUN apk add git
+RUN apk upgrade --update && apk add \
+    libfreetype6-dev \
+    git
 
 WORKDIR /opt/plantuml
 
